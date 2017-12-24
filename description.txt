@@ -1,0 +1,1 @@
+Gives a gift to players who were kicked because of a server restart or crash if they come back within the gift timeout (default: 5 minutes)
