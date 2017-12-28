@@ -47,7 +47,7 @@ minetest.register_on_joinplayer(function(player)
     if give_gifts == true then
         if kicked_players[name] then
             player:get_inventory():add_item("main", ItemStack(gift_name.." "..tostring(gift_count)))
-            minetest.chat_send_player(name, "We're sorry you were kicked, have "..tostring(gift_count).." "..get_description(gift_name).." as a thank you gift for comming back :)")
+            minetest.chat_send_player(name, "We're sorry you were kicked, have "..tostring(gift_count).." "..get_description(gift_name).." as a thank you gift for coming back :)")
             kicked_players[name] = nil
         end
     end
